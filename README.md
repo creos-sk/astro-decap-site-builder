@@ -1,43 +1,98 @@
-# Astro Starter Kit: Minimal
+# Astro Decap Site Builder
 
-```sh
-npm create astro@latest -- --template minimal
+
+
+Astro Decap Site Builder is a modular static-site builder for developers who want fast, secure, and maintainable websites without databases or server dependencies. Built on Astro, styled with Tailwind CSS, and powered by DecapCMS, it follows a strict atomic-design architecture.
+
+## Demo & Screenshots
+
+🌐 Live Demo
+
+Explore the builder in action:
+
+**Landing Page Example**
+
+**Blog Listing & Article**
+
+**Modular Block Layout**
+
+>Screenshots highlight how pages are composed from reusable blocks, styled with Tailwind, and managed through DecapCMS. Fully static and production-ready.
+
+## Features
+
+* Modular, block-based page building
+* JSON-driven content structure
+* MDX-based blog system
+* Atomic design (atoms, molecules, organisms)
+* Centralized UI components
+* Global JSON configuration (/src/config/*.json)
+* DecapCMS integration (collections, widgets)
+* Zero-backend, fully static output
+* Hot-reload for rapid development
+
+## Quick Folder Structure
+```css
+components/
+├── atoms/
+├── molecules/
+├── organisms/
+└── ui/
+src/
+├── pages/
+├── content/
+│   ├── pages/
+│   └── articles/
+├── config/
+└── layouts/
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Installation
 
-## 🚀 Project Structure
+```bash
+git clone https://github.com/your-user/astro-decap-site-builder.git
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+cd astro-decap-site-builder
+npm install
+npm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Run Decap CMS
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+npx decap-server
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+Build and preview:
 
-## 🧞 Commands
+```bash
+npm run build
+npm run preview
+```
 
-All commands are run from the root of the project, from a terminal:
+Final static files are in /dist ready for deployment.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Deployment
 
-## 👀 Want to learn more?
+Works on:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+* Netlify
+* Vercel
+* Cloudflare Pages
+* GitHub Pages
+* Any static hosting (just upload /dist)
+
+## Contributing & Support ❤️
+
+This project is free, open, and created to help anyone build clean, minimal, and reliable static sites.
+If this system saves you time or improves your workflow, consider supporting:
+
+👉 [Buy me a coffee](https://buymeacoffee.com/creos.sk) ❤️
+
+GitHub Sponsors support will be added soon.
+
+Created by **Pali from Creos**.
+
+## License
+
+Completely free to use, modify, and adapt. Support is appreciated but optional.
+
